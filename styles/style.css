@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -66,15 +69,15 @@ ol {
 
 .result__video-container {
   position: relative;
+  margin-block-end: 16px;
   inline-size: 100%;
   block-size: 386px;
-  margin-block-end: 16px;
 }
 
 .result__video {
+  object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .search-form {
@@ -107,11 +110,11 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 2px;
+  overflow-y: auto;
   inline-size: 100%;
   max-inline-size: 399px;
   block-size: 298px;
-  padding: 2px;
-  overflow-y: auto;
 }
 
 .content__list {
@@ -133,9 +136,9 @@ ol {
 
 .content__card-link {
   display: block;
-  inline-size: 100%;
   color: #ffffff;
   text-decoration: none;
+  inline-size: 100%;
 }
 
 .content__video-card {
@@ -146,9 +149,9 @@ ol {
 
 .content__video-card-thumbnail {
   flex-shrink: 0;
+  object-fit: cover;
   min-inline-size: 194px;
   block-size: 103px;
-  object-fit: cover;
 }
 
 .content__video-card-description-container {
@@ -163,7 +166,6 @@ ol {
 }
 
 .content__video-card-title {
-  inline-size: 100%;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -171,6 +173,7 @@ ol {
   line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  inline-size: 100%;
   white-space: nowrap;
 }
 
@@ -231,8 +234,6 @@ ol {
 }
 
 .search-form__textfield {
-  min-inline-size: 225px;
-  block-size: 27px;
   border-width: 1px;
   border-style: solid;
   border-color: #ffffff;
@@ -243,6 +244,8 @@ ol {
   font-weight: 400;
   font-size: 18px;
   background-color: transparent;
+  min-inline-size: 225px;
+  block-size: 27px;
   appearance: none;
 }
 
@@ -260,21 +263,21 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  inline-size: 19px;
-  block-size: 19px;
   border-width: 1px;
   border-style: solid;
   border-color: #ffffff;
   padding: 1px;
+  inline-size: 19px;
+  block-size: 19px;
 }
 
 .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  inline-size: 100%;
-  block-size: 100%;
   opacity: 0;
   background-color: #ffffff;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
