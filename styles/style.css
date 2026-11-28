@@ -58,7 +58,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
-  block-size: 534px;
 }
 
 .result {
@@ -162,7 +161,6 @@ ol {
   align-items: flex-start;
   gap: 6px;
   min-inline-size: 0;
-  block-size: 103px;
 }
 
 .content__video-card-title {
@@ -190,7 +188,6 @@ ol {
 .more-button {
   flex-shrink: 0;
   inline-size: 390px;
-  min-block-size: 34px;
 }
 
 .search-form__fieldset-title {
@@ -299,16 +296,17 @@ ol {
   border-style: solid;
   border-color: #ffffff;
   color: #ffffff;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   background-color: transparent;
+  min-block-size: 34px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
   inline-size: 194px;
-  block-size: 34px;
 }
 
 .button:hover {
