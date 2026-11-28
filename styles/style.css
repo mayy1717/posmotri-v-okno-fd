@@ -287,10 +287,6 @@ ol {
   text-underline-offset: 2px;
 }
 
-.search-form__label:focus {
-  outline: 0;
-}
-
 .button {
   border-width: 1px;
   border-style: solid;
@@ -335,8 +331,7 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link:hover .content__video-card-title,
-.content__card-link:hover .content__video-card-description {
+.content__card-link:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
